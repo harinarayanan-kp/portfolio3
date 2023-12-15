@@ -1,14 +1,14 @@
-import React from 'react'
-import Home from './components/Home'
-import Navbar from './components/Navbar'
+import React from "react";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Home/>
-    </div>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  );
+};
 
-export default App
+export default App;
