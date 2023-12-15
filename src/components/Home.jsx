@@ -4,8 +4,9 @@ import Navbar from './Navbar'
 const Home = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="">HOME</div>
+      <button onClick={console.log("clicked")}>.</button>
     </div>
   )
 }
