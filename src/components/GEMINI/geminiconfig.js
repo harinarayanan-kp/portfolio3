@@ -49,8 +49,6 @@ export const runChat = async (inputValue) => {
   return response.candidates[0].content.parts[0].text;
 };
 
-
-// Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export const ChatBot = async()=> {
